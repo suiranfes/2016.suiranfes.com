@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>イベント・体育館行事</title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.scrollshow.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+<script type="text/javascript" src="js/jquery.slidewide.js"></script>
+<script>
+$(function($){
+	$('html').smoothscroll({easing : 'swing', speed : 500, margintop : 10});
+	$('.totop').scrollshow({position : 500});
+	$('.slide').slidewide({
+		touch         : true,
+		touchDistance : '80',
+		autoSlide     : true,
+		repeat        : true,
+		interval      : 3000,
+		duration      : 500,
+		easing        : 'swing',
+		imgHoverStop  : true,
+		navHoverStop  : true,
+		prevPosition  : 0,
+		nextPosition  : 0,
+		viewSlide     : 1,
+		baseWidth     : 940,
+		navImg        : false,
+		navImgCustom  : false,
+		navImgSuffix  : ''
+	});
+	$('.slidePrev img').rollover();
+	$('.slideNext img').rollover();
+	});
+</script>
+<script type="text/javascript">
+    $(window).on('load', function() {
+        var url = $(location).attr('href');
+        if(url.indexOf("?id=") != -1){
+            var id = url.split("?id=");
+            var $target = $('#' + id[id.length - 1]);
+            if($target.length){
+                var pos = $target.offset().top;
+                $("html, body").animate({scrollTop:pos}, 500);
+            }
+        }
+    });
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+	<div class="inner">
+		<a href="index.html"><img src="images/logo.png" alt="第64回翠巒祭"></a>
+		<p class="summary">
+		高崎高校文化祭 6月4・5日
+		</p>
+	</div><!-- /.inner -->
+</header>
+
+<div id="spMenu"><span id="navBtn"><span id="navBtnIcon"></span></span></div>
+<script type="text/javascript" src="menu.js"></script>
+<div id="contents">
+	<div id="main">
+        <div class="jump"><span  id="event"></span></div>
+		<h1>イベントステージ</h1>
+		<h4 class="large">ミス高高コンテスト</h4>
+		<p>超大人気企画ミス高高コンテスト‼
+		<br>高高で一番かわいい男の娘は誰だ！？　決めるのは会場にいるあなたです！
+		</p>
+		<p>予選A 1日目 13:25～13:45
+		<br>予選B 1日目 14:40～15:00
+		<br>予選C 1日目 16:00～16:20
+		<br>決勝　2日目 14:30～15:00
+		</p>
+		
+		<h4 class="large">高高王</h4>
+		<p>最強はオレだ！！！
+		<br>翠巒祭で最もハードでエキサイティングな大目玉企画。
+		<br>高高の王者となるため真の漢たちがエクストリームな戦いを繰り広げる‼ </p>
+		<p>2日目 12:10～12:50</p>
+		
+		<h4 class="large">筋肉王国 ～マッスルキングダム～</h4>
+		<p>日頃から鍛えし筋肉で競い合う！　高高一マッチョなのは誰だ！？</p>
+		<p>2日目 11:00～11:40</p>
+		
+		<h4 class="large">マジ歌選手権</h4>
+		<p>高高で一番歌がうまいのは誰だ！？　卓越した歌唱力を披露します!</p>
+		<p>2日目 10:15～10:45</p>
+		
+		<h4 class="large">漫才・コント・一発芸</h4>
+		<p>センスの塊である高高生が、抱腹絶倒・大爆笑な自慢のネタを披露！</p>
+		<p>1日目 15:15～15:45</p>
+		
+		<h4 class="large">翠巒クイズ大会</h4>	
+		<p><strong>新企画！</strong>　高高のクイズ王を目指し、ポイント争奪戦！
+		<br>もし間違えたら……？</p>
+		<p>1日目 14:00～14:20</p>
+		
+		<h4 class="large">和太鼓部</h4>		
+		<p>高崎高校漢組による演奏
+		<br>漢たちによる力強くダイナミックな演奏を刮目せよ！
+		</p>
+		<p>1日目 12:35～13:10
+		<br>2日目 9:15～10:00
+		</p>
+		
+		<h4 class="large">ガチムチ幻影旅団</h4>
+		<p>高高生の真の姿をあなたに……</p>
+		<p>2日目 13:20～13:40</p>
+		
+		<h4 class="large">グランドフィナーレ</h4>
+		<p>最後まで何が起こるかわからない！
+		<br>翠巒祭のラストを飾るイベントステージの最終演目！</p>
+		<p>2日目 15:40～16:00</p>
+		
+		<h3>タイムテーブル</h3>
+		<ul>
+			<li>1日目(6月4日　土曜日)<br>
+				<ul>
+					<li>12:35～13:10　和太鼓</li>
+					<li>13:25～13:45　ミス高高コンテスト　予選Aブロック</li>
+					<li>14:00～14:30　翠巒クイズ大会</li>
+					<li>14:40～15:00　ミス高高コンテスト　予選Bブロック</li>
+					<li>15:15～15:45　漫才・コント・一発芸</li>
+					<li>16:00～16:20　ミス高高コンテスト　予選Cブロック</li>
+				</ul>
+			</li>
+			<li>2日目(6月5日　日曜日)<br>
+				<ul>
+					<li>9:15～10:00　和太鼓</li>
+					<li>10:15～10:45　マジ歌選手権</li>
+					<li>11:00～11:40　筋肉王国</li>
+					<li>12:10～12:50　高高王</li>
+					<li>13:20～13:40　ガチムチ幻影旅団</li>
+					<li>14:30～15:00　ミス高高コンテスト　決勝</li>
+					<li>15:40～16:00　グランドフィナーレ</li>
+				</ul>
+			</li>
+		</ul>
+		
+	    <div class="jump"><span  id="gym"></span></div>
+        <h1>体育館行事</h1>
+		<h4 class="large">SUIRAN STATION</h4>
+		<p>今年からの<strong>新企画！</strong>　『SUIRAN STATION』</p>
+		<p>色々な部活動が歌や演奏、踊りなどの様々なパフォーマンスをします。</p>
+		<p>今年は2日目(6月5日　日曜日)だけの開催です。</p>
+		<p>開始予定時刻 1:30
+		<br>終了予定時刻 15:30 
+		<br>※スリッパの配布はありません。必要な方はご持参ください。
+		</p>
+		
+		<h3>出演</h3>
+		<ol>
+			<li>JRC部</li>
+			<li>硬式野球部</li>
+			<li>軟式野球部</li>
+			<li>応援部</li>
+			<li>生徒会</li>
+			<li>マンドリン部</li>
+			<li>和太鼓部</li>
+			<li>剣道部</li>
+			<li>吹奏楽部</li>			
+			<li>サッカー部</li>
+		</ol>
+			
+		
+    </div><!-- /#main -->
+	<div id="sub">
+	    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/Suirannsai64" data-widget-id="585002273316544512">@Suirannsai64さんのツイート</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>     
+		<script type="text/javascript" src="link.js"></script>
+	</div><!-- /#sub -->
+</div><!-- /#contents -->
+
+<footer>
+	<div class="copyright">Copyright &#169; 2016 Suiran Festival All Rights Reserved.</div><!-- /.copyright -->
+</footer>
+
+<div class="totop"><a href="#"><img src="images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86297566-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

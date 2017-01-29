@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>食べ物</title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.scrollshow.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+<script type="text/javascript" src="js/jquery.slidewide.js"></script>
+<script>
+$(function($){
+	$('html').smoothscroll({easing : 'swing', speed : 500, margintop : 10});
+	$('.totop').scrollshow({position : 500});
+	$('.slide').slidewide({
+		touch         : true,
+		touchDistance : '80',
+		autoSlide     : true,
+		repeat        : true,
+		interval      : 3000,
+		duration      : 500,
+		easing        : 'swing',
+		imgHoverStop  : true,
+		navHoverStop  : true,
+		prevPosition  : 0,
+		nextPosition  : 0,
+		viewSlide     : 1,
+		baseWidth     : 940,
+		navImg        : false,
+		navImgCustom  : false,
+		navImgSuffix  : ''
+	});
+	$('.slidePrev img').rollover();
+	$('.slideNext img').rollover();
+	});
+</script>
+<script type="text/javascript">
+    $(window).on('load', function() {
+        var url = $(location).attr('href');
+        if(url.indexOf("?id=") != -1){
+            var id = url.split("?id=");
+            var $target = $('#' + id[id.length - 1]);
+            if($target.length){
+                var pos = $target.offset().top;
+                $("html, body").animate({scrollTop:pos}, 500);
+            }
+        }
+    });
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+	<div class="inner">
+		<a href="index.html"><img src="images/logo.png" alt="第64回翠巒祭"></a>
+		<p class="summary">
+		高崎高校文化祭 6月4・5日
+		</p>
+	</div><!-- /.inner -->
+</header>
+
+<div id="spMenu"><span id="navBtn"><span id="navBtnIcon"></span></span></div>
+<script type="text/javascript" src="menu.js"></script>
+<div id="contents">
+	<div id="main">
+        <h1>食べ物</h1>
+        <div class="jump"><span  id="m"></span></div>
+		<h2 >模擬店</h2>
+        <table class="food" >
+			<tbody >
+			    <tr><th>メニュー</th><th class="price">値段</th></tr>
+			    <tr><td>ジュース</td><td>120～150円</td></tr>
+			    <tr><td>クレープ</td><td>250～300円</td></tr>
+			    <tr><td>つぶつぶアイス</td><td>300円</td></tr>
+			    <tr><td>チュロス</td><td>100円</td></tr>
+			    <tr><td>焼きまんじゅう</td><td>100円</td></tr>
+			    <tr><td>かき氷</td><td>100円</td></tr>
+			    <tr><td>焼きそば</td><td>150円</td></tr>
+			    <tr><td>フランクフルト</td><td>100円</td></tr>
+			    <tr><td>からあげ</td><td>150円</td></tr>
+			    <tr><td>ポップコーン</td><td>100円</td></tr>
+			</tbody>
+		</table>
+		<p>校舎外での販売です。詳しい場所はパンフレットをご覧ください。
+		<br>完売する可能性があります。ご了承ください。
+		<br>ゴミはゴミステーションへよろしくお願いします。</p>
+        <div class="jump"><span  id="s"></span></div>
+		<h2 >食堂</h2>
+        <table class="food" >
+			<tbody >
+			    <tr><th>メニュー</th><th class="price">値段</th></tr>
+			    <tr><td>登利平　鳥めし（竹）</td><td>750円</td></tr>
+			    <tr><td>チキンソースカツ丼</td><td>550円</td></tr>
+			    <tr><td>ハンバーグ弁当</td><td>500円</td></tr>
+			    <tr><td>田舎弁当</td><td>450円</td></tr>
+			    <tr><td>カルビ焼丼</td><td>550円</td></tr>
+			    <tr><td>のりから弁当</td><td>450円</td></tr>
+			    <tr><td>幕の内弁当</td><td>550円</td></tr>
+			    <tr><td>おにぎり（さけ）</td><td>120円</td></tr>
+			    <tr><td>おにぎり（こんぶ）</td><td>110円</td></tr>
+			    <tr><td>お茶</td><td>130円</td></tr>				
+			</tbody>
+		</table>
+		<p>校舎2階にあります。
+		<br>ラスト―オーダーは15:30です。時間前に完売した場合は販売終了とさせていただきます。
+		<br>弁当はお持ち帰りできます。</p>
+        <div class="jump"><span  id="k"></span></div>
+        <h2 >喫茶店</h2>
+        <table class="food" >
+			<tbody >
+			    <tr><th>メニュー</th><th class="price">値段</th></tr>
+			    <tr><td>アイス<br>(バニラ・チョコ・抹茶・オレンジ・ストロベリー・メロン・レモン)</td><td>各種100円</td></tr>
+			    <tr><td>ケーキ<br>(ティラミス・ニューヨークチーズケーキ・フランポワタルト・抹茶ケーキ・モンブラン)</td><td>各種250円</td></tr>
+			    <tr><td>ドリンク<br>(アイスティー・アイスコーヒー・カルピス・サイダー・コーラ等)</td><td>100円</td></tr>
+			</tbody>
+		</table>
+		<table class="food" >
+			<tbody >
+			    <tr><th>お得なセットメニュー</th><th class="price">値段</th></tr>
+			    <tr><td>Aセット(アイス1つ+ドリンク1つ)</td><td>180円</td></tr>
+			    <tr><td>Bセット(ケーキ1つ+ドリンク1つ)</td><td>330円</td></tr>
+			</tbody>
+		</table>
+		<p>校舎2階にあります。
+		<br>ラスト―オーダーは15:30です。時間前に完売した場合は販売終了とさせていただきます。</p>
+    </div><!-- /#main -->
+	<div id="sub">
+	    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/Suirannsai64" data-widget-id="585002273316544512">@Suirannsai64さんのツイート</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>     
+		<script type="text/javascript" src="link.js"></script>
+	</div><!-- /#sub -->
+</div><!-- /#contents -->
+
+<footer>
+	<div class="copyright">Copyright &#169; 2016 Suiran Festival All Rights Reserved.</div><!-- /.copyright -->
+</footer>
+
+<div class="totop"><a href="#"><img src="images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86297566-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

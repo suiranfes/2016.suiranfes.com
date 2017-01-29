@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>一般展示</title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.scrollshow.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+<script type="text/javascript" src="js/jquery.slidewide.js"></script>
+<script>
+$(function($){
+	$('html').smoothscroll({easing : 'swing', speed : 500, margintop : 10});
+	$('.totop').scrollshow({position : 500});
+	$('.slide').slidewide({
+		touch         : true,
+		touchDistance : '80',
+		autoSlide     : true,
+		repeat        : true,
+		interval      : 3000,
+		duration      : 500,
+		easing        : 'swing',
+		imgHoverStop  : true,
+		navHoverStop  : true,
+		prevPosition  : 0,
+		nextPosition  : 0,
+		viewSlide     : 1,
+		baseWidth     : 940,
+		navImg        : false,
+		navImgCustom  : false,
+		navImgSuffix  : ''
+	});
+	$('.slidePrev img').rollover();
+	$('.slideNext img').rollover();
+	});
+</script>
+<script type="text/javascript">
+    $(window).on('load', function() {
+        var url = $(location).attr('href');
+        if(url.indexOf("?id=") != -1){
+            var id = url.split("?id=");
+            var $target = $('#' + id[id.length - 1]);
+            if($target.length){
+                var pos = $target.offset().top;
+                $("html, body").animate({scrollTop:pos}, 500);
+            }
+        }
+    });
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+<style>
+.kekka-1 {
+padding: 20px;
+background-image: -moz-linear-gradient(top, #c9a40a, #ffdf0a);
+background-image: -ms-linear-gradient(top, #c9a40a, #ffdf0a);
+background-image: -o-linear-gradient(top, #c9a40a, #ffdf0a);
+background-image: -webkit-linear-gradient(top, #c9a40a, #ffdf0a);
+background-image: linear-gradient(top, #c9a40a, #ffdf0a);
+background-clip: padding-box;
+}
+.kekka-2 {
+padding: 20px;
+background-image: -moz-linear-gradient(top, #737373, #d1d1d1);
+background-image: -ms-linear-gradient(top, #737373, #d1d1d1);
+background-image: -o-linear-gradient(top, #737373, #d1d1d1);
+background-image: -webkit-linear-gradient(top, #737373, #d1d1d1);
+background-image: linear-gradient(top, #737373, #d1d1d1);
+background-clip: padding-box;
+}
+.kekka-3 {
+padding: 20px;
+background-image: -moz-linear-gradient(top, #b7783a, #f99c59);
+background-image: -ms-linear-gradient(top, #b7783a, #f99c59);
+background-image: -o-linear-gradient(top, #b7783a, #f99c59);
+background-image: -webkit-linear-gradient(top, #b7783a, #f99c59);
+background-image: linear-gradient(top, #b7783a, #f99c59);
+background-clip: padding-box;
+}
+.kekka-o {
+padding: 5px 20px 5px 20px;
+background-image: -moz-linear-gradient(top, #e0e5ff, #fcf5ff);
+background-image: -ms-linear-gradient(top, #e0e5ff, #fcf5ff);
+background-image: -o-linear-gradient(top, #e0e5ff, #fcf5ff);
+background-image: -webkit-linear-gradient(top, #e0e5ff, #fcf5ff);
+background-image: linear-gradient(top, #e0e5ff, #fcf5ff);
+background-clip: padding-box;
+}
+.kekka-c {
+padding: 5px 20px 5px 20px;
+background-image: -moz-linear-gradient(top, #beffb8, #dfffde);
+background-image: -ms-linear-gradient(top, #beffb8, #dfffde);
+background-image: -o-linear-gradient(top, #beffb8, #dfffde);
+background-image: -webkit-linear-gradient(top, #beffb8, #dfffde);
+background-image: linear-gradient(top, #beffb8, #dfffde);
+background-clip: padding-box;
+}
+b {
+    font-weight:700;
+}
+.kekka-wrapper{
+    display:block;
+    width:100%;
+    position:relative;
+}
+@media screen and (min-width:850px) { 
+.kekka-col{
+    width: calc( 50% - 20px );
+    padding:7px;
+    display:block;
+    float:left;
+}
+.kekka {
+border-radius: 6px;
+display:block;
+width: calc( 100% - 44px );
+margin: 10px 2px 10px 2px;
+}
+}
+@media screen and (max-width:849px) { 
+.kekka-col{
+    width: 95%;
+    padding:7px;
+    display:block;
+    clear:both;
+}
+.kekka {
+border-radius: 6px;
+display:block;
+width: calc( 80% - 17px );
+margin: 10px auto;
+}
+}
+</style>
+</head>
+<body>
+<header>
+	<div class="inner">
+		<a href="index.html"><img src="images/logo.png" alt="第64回翠巒祭"></a>
+		<p class="summary">
+		高崎高校文化祭 6月4・5日
+		</p>
+	</div><!-- /.inner -->
+</header>
+
+<div id="spMenu"><span id="navBtn"><span id="navBtnIcon"></span></span></div>
+<script type="text/javascript" src="menu.js"></script>
+<div id="contents">
+	<div id="main">
+        <h1>一般展示</h1>
+        <h2 style="background-color:transparent;">投票結果発表</h2>
+        <div class="kekka-wrapper">
+        <div class="kekka-col">
+        <h3 style="background-color:transparent;color:rgb(6, 138, 204);font-size:25px;text-align:center;">部活動</h3>
+        <div class="kekka kekka-1">
+        <span style="font-size:1.8rem;">1位 810票</span><br>
+        <span style="font-size:2.5rem;"><b>山岳部</b></span>
+        </div>
+        <div class="kekka kekka-2">
+        <span style="font-size:1.6rem;">2位 454票</span><br>
+        <span style="font-size:2.3rem;"><b>鉄道研究部</b></span>
+        </div>
+        <div class="kekka kekka-3">
+        <span style="font-size:1.4rem;">3位 234票</span><br>
+        <span style="font-size:2.0rem;"><b>應援部</b></span>
+        </div>
+        <div class="kekka kekka-o">
+        <span style="font-size:1.1rem;">4位 203票 <b>数学部</b></span>
+        </div>
+        <div class="kekka kekka-o">
+        <span style="font-size:1.1rem;">5位 199票 <b>物理部</b></span>
+        </div>
+        <div class="kekka kekka-o">
+        <span style="font-size:0.8rem;">6位 144票 <b>化学部</b></span>
+        </div>
+        <div class="kekka kekka-o">
+        <span style="font-size:0.8rem;">7位  80票 <b>新聞部</b></span>
+        </div>
+        <div class="kekka kekka-o">
+        <span style="font-size:0.8rem;">8位  79票 <b>写真部・美術部</b></span>
+        </div>
+        <div class="kekka kekka-o">
+        <span style="font-size:0.8rem;">9位  70票 <b>囲碁部・将棋部</b></span>
+        </div>
+        <div class="kekka kekka-o">
+        <span style="font-size:0.8rem;">10位 67票 <b>文藝部</b></span>
+        </div>
+        <div class="kekka kekka-o">
+        <span style="font-size:0.8rem;">11位 44票 <b>放送メディア研究部</b></span>
+        </div>
+        <p>計:2384票</p>
+        </div>
+
+        <div class="kekka-col">
+        <h3 style="background-color:transparent;color:rgb(6, 138, 204);font-size:25px;text-align:center;">クラス展示</h3>
+        <div class="kekka kekka-1">
+        <div style="transform:scale(0.9,1);transform-origin:0% 0%;display:inline-block;width:620px;">
+        <span style="font-size:1.8rem;">1位 687票</span>
+        <span style="font-size:1.1rem;">3年2,3,4組</span></div><br>
+        <span style="font-size:2.5rem;transform:scale(0.85,1);transform-origin:0% 0%;display:inline-block;width:620px;"><b>おネエやしき</b></span>
+        </div>
+        <div class="kekka kekka-2">
+        <div style="transform:scale(0.93,1);transform-origin:0% 0%;display:inline-block;width:620px;">
+        <span style="font-size:1.6rem;">2位 483票</span>
+        <span style="font-size:1.1rem;">3年5,6組</span></div><br>
+        <div style="font-size:2.3rem;transform:scale(0.57,1);transform-origin:0% 0%;display:inline-block;width:620px;"><b>アソス in wonderland</b></div>
+        </div>
+        <div class="kekka kekka-3">
+        <span style="font-size:1.4rem;">3位 273票</span>
+        <span style="font-size:1.1rem;">3年1組</span><br>
+        <div style="font-size:2.0rem;transform:scale(0.46,1);transform-origin:0% 0%;display:inline-block;width:620px;"><b>NASA ～君は宇宙へ行けるのか～</b></div>
+        </div>
+        <div class="kekka kekka-c">
+        <span style="font-size:1.1rem;transform:scale(0.75,1);transform-origin:0% 0%;display:inline-block;width:620px;">4位 251票 3年7組 <b>スターウォーズ</b></span>
+        </div>
+        <div class="kekka kekka-c">
+        <span style="font-size:1.1rem;transform:scale(0.83,1);transform-origin:0% 0%;display:inline-block;width:620px;">5位 223票 1年1,3,8組 <b>和ジノ</b></span>
+        </div>
+        <div class="kekka kekka-c">
+        <span style="font-size:0.8rem;transform:scale(0.80,1);transform-origin:0% 0%;display:inline-block;width:620px;">6位 208票 1年4,6,7組 <b>ジャングル行こうぜ！</b></span>
+        </div>
+        <div class="kekka kekka-c">
+        <span style="font-size:0.8rem;transform:scale(0.85,1);transform-origin:0% 0%;display:inline-block;width:620px;">7位 184票 2年8組 <b>恋愛シミュレーション</b></span>
+        </div>
+        <div class="kekka kekka-c">
+        <span style="font-size:0.8rem;transform:scale(0.85,1);transform-origin:0% 0%;display:inline-block;width:620px;">8位 141票 2年1組 <b>SSマジックワールド</b></span>
+        </div>
+        <div class="kekka kekka-c">
+        <span style="font-size:0.8rem;transform:scale(0.85,1);transform-origin:0% 0%;display:inline-block;width:620px;">9位 113票 2年4,5組 <b>観音山の魅力再発見</b></span>
+        </div>
+        <div class="kekka kekka-c">
+        <span style="font-size:0.8rem;transform:scale(0.85,1);transform-origin:0% 0%;display:inline-block;width:620px;">10位 109票 3年8組 <b>水の都　ヴェネツィア</b></span>
+        </div>
+        <div class="kekka kekka-c">
+        <span style="font-size:0.8rem;transform:scale(0.64,1);transform-origin:0% 0%;display:inline-block;width:620px;">11位 106票 1年2,5組 <b>キャラクターミニゲームin足つぼ</b></span>
+        </div>
+        <div class="kekka kekka-c">
+        <span style="font-size:0.8rem;transform:scale(0.85,1);transform-origin:0% 0%;display:inline-block;width:620px;">12位 101票 2年6,7組 <b>高高×RPG</b></span>
+        </div>
+        <p>計:2879票</p>
+        </div>
+        </div>
+        <div style="clear:both;">
+        <p style="color:#888888;text-decoration: line-through;">一般展示のアンケートを行っています。
+        <br>回答は<a href="javascript:void(0);">こちら</a>でできます。ご協力お願いします。</p>
+        <p style="color:red;">WEBアンケートは終了しました。多くの皆様にご回答いただきました。ありがとうございました。ご意見やご感想は、今後の運営に役立てていきます。</p>
+        </div>
+        <div class="jump"><span  id="1"></span></div>
+        <h2>1階</h2>
+        <div style="overflow-y:hidden;  overflow-x:auto;">
+            <table class="panten">
+                <tbody>
+                    <tr><th>1-1</th><th>1-2</th><th>1-3</th><th>1-4</th><th>1-5</th><th>1-6</th><th>1-7</th><th>1-8</th></tr>
+                    <tr><td>新聞部</td><td>囲碁部<br>将棋部</td><td>物理部</td><td>化学部</td><td>数学部</td><td>鉄道研究部</td><td colspan="2">通信制</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <h6>1-1　新聞部</h6>
+        <p> お客様だけの新聞を発行します！ </p>
+        <h6>1-2　囲碁部・将棋部</h6>
+        <p>将棋部　高高生との対局・自由対局コーナー・詰め将棋コーナーやってます。是非お立ち寄りください。</p>
+        <p>囲碁部　囲碁チャレンジ（景品あります）・自由対局・全国レベルの高校生と対局ができます！</p>
+        <h6>1-3　物理部　「ロボット・実験・ゲーム展示」</h6>
+        <p>部員が作ったロボットやゲームを展示しています。空気砲もあります。<br>1日目は藤岡中央高校物理部と<a href="http://www.robocupjunior.jp/" target="_blank">ロボカップ</a>の招待試合を行います。</p>
+        <h6>1-4　化学部</h6>
+        <p> 毎年恒例子供に大人気のスライム！<br>迫力満点の実験もあります！！ </p>
+        <h6>1-5　数学部　「ピタゴラスイッチ！！」</h6>
+        <p>例年通りピタゴラスイッチを製作・展示しております！！クイズなどもあるのでぜひいらしてください</p>
+        <h6>1-6　鉄道研究部</h6>
+        <p> くわしくは<a href="https://ths-r.org/" target="_blank">こちら</a>をご覧ください。（鉄道研究部のホームページに移動します。） </p>
+        <h6>1-7・8　通信制　「SHOW×RERAX ～オシャレで一息つける空間～」</h6>
+        <p>焼き絵体験ブース　実用的なアクリルたわしとかわいいハンドメイド作品も販売中！</p>
+
+        <div class="jump"><span  id="2"></span></div>
+	    <h2>2階</h2>
+        <div style="overflow-y:hidden;  overflow-x:auto;">
+            <table class="panten">
+                <tbody>
+                    <tr><th>2-1</th><th>2-2</th><th>2-3</th><th>2-4</th><th>2-5</th><th>2-6</th><th>2-7</th><th>2-8</th><th>2-9</th></tr>
+                    <tr><td colspan="2">喫茶</td><td>3年2組<br>3年3組<br>3年4組</td><td>3年8組</td><td>3年5組<br>3年6組</td><td>3年1組</td><td>山岳部</td><td>3年7組</td><td>2年4組<br>2年5組</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <h6>2-1・2　喫茶</h6>
+        <p>喫茶店です。メニュー・価格等は<a href="food.html?id=k">こちら</a></p>
+        <h6>2-3　3年2・3・4組　「おネエやしき」</h6>
+        <p>入口の黒幕の向こうに待っているのは伝説の生き物「おネエ」<br>高高限定のおネエたちをとくとご覧あれ！！</p>
+        <h6>2-4　3年8組　「水の都　ヴェネツィア」</h6>
+        <p>まるでヨーロッパに来たかのような圧倒的なクオリティと清涼感をお届けします！！</p>
+        <h6>2-5　3年5・6組　「アソス in wonderland」</h6>
+        <p>アソスと一緒に写真を撮ろう！</p>
+        <h6>2-6　3年1組　「NASA　～君は宇宙へ行けるのか～」</h6>
+        <p>私達SSクラスが米国研修で学んだことをお伝えします！　クイズに正解すれば景品がもらえます。</p>
+        <h6>2-7　山岳部</h6>
+        <p> これであなたも山岳部！！ </p>
+        <h6>2-8　3年7組　「スターウォーズ」</h6>
+        <p>手作り感あふれるクラス展示になっているのでぜひ見にきてください！</p>
+        <h6>2-9　2年4・5組　「観音山の魅力再発見」</h6>
+        <p>全ての生物の故郷「観音山」。そんな観音山の魅力を再発見してみませんか？今ならイケメンが案内してくれますよ！</p>
+        <div class="jump"><span  id="3"></span></div>
+	    <h2>3階</h2>
+        <div style="overflow-y:hidden;  overflow-x:auto;">
+            <table class="panten">
+                <tbody>
+                    <tr><th>3-1</th><th>3-2</th><th>3-3</th><th>3-4</th><th>3-5</th><th>3-6</th><th>3-7</th><th>3-8</th><th>3-9</th></tr>
+                    <tr><td>1年2組<br>1年5組</td><td>文藝部</td><td>2年8組</td><td>2年6組<br>2年7組</td><td>應援部</td><td>写真部<br>美術部</td><td>2年1組</td><td>1年1組<br>1年3組<br>1年8組</td><td>1年4組<br>1年6組<br>1年7組</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <h6>3-1　1年2・5組　「キャラクターミニゲームin足つぼ」</h6>
+        <p>誰も仕上がりがどうなるかわからない！？　このカオスな展示の結末を君の目で見よ。</p>
+        <h6>3-2　文藝部</h6>
+        <p>文芸部という言葉に聞きなれない人はここに来てください。</p>
+        <h6>3-3　2年8組　「恋愛シミュレーション」</h6>
+        <p>彼氏彼女がいないそんな非リア充の貴方！（特に女子！）恋愛というものはどういうものなのかシミュレーション形式で経験できます。<br>※注　男子校目線です。</p>
+        <h6>3-4　2年6・7組　「高高×RPG」</h6>
+        <p>高高にまつわる6つの謎を解き明かして敵を倒せ！！景品もあるよ</p>
+        <h6>3-5　應援部 「高崎高校應援部の活動と歴史」</h6>
+        <p>普段なじみのない應援部の御理解、御感が得られれば幸いでございます。</p>
+        <h6>3-6　写真部・美術部</h6>
+        <p>展示の量が昨年と全然違うってはっきりわかんだね<br>見とけよ見とけよ</p>
+        <h6>3-7　2年1組 「SSマジックワールド」</h6>
+        <p>SSクラスにしかできない不思議な世界をご提供します！！<br>マジックで驚いたり、小人になったりできます。</p>
+        <h6>3-8　1年1・3・8組　「和ジノ」</h6>
+        <p>ここでは和風なカジノと称し、巨大なとんとん相撲やカードゲームをするという体験ができます。勝てば景品もあるのでぜひ来てください！</p>
+        <h6>3-9　1年4・6・7組　「ジャングル行こうぜ！」</h6>
+        <p> ジャングルがモチーフになっている的屋です。<br>射的のほかにパチンコやくじ要素もあるので他では体験できない新しい店となっています。<br>ぜひ一度足を運んでみてください。 </p>
+    </div><!-- /#main -->
+	<div id="sub">
+	    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/Suirannsai64" data-widget-id="585002273316544512">@Suirannsai64さんのツイート</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>     
+       	<script type="text/javascript" src="link.js"></script>
+	</div><!-- /#sub -->
+</div><!-- /#contents -->
+
+<footer>
+	<div class="copyright">Copyright &#169; 2016 Suiran Festival All Rights Reserved.</div><!-- /.copyright -->
+</footer>
+
+<div class="totop"><a href="#"><img src="images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86297566-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

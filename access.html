@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>アクセス</title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.scrollshow.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+<script type="text/javascript" src="js/jquery.slidewide.js"></script>
+<script>
+$(function($){
+	$('html').smoothscroll({easing : 'swing', speed : 500, margintop : 10});
+	$('.totop').scrollshow({position : 500});
+	$('.slide').slidewide({
+		touch         : true,
+		touchDistance : '80',
+		autoSlide     : true,
+		repeat        : true,
+		interval      : 3000,
+		duration      : 500,
+		easing        : 'swing',
+		imgHoverStop  : true,
+		navHoverStop  : true,
+		prevPosition  : 0,
+		nextPosition  : 0,
+		viewSlide     : 1,
+		baseWidth     : 940,
+		navImg        : false,
+		navImgCustom  : false,
+		navImgSuffix  : ''
+	});
+	$('.slidePrev img').rollover();
+	$('.slideNext img').rollover();
+	});
+</script>
+<script type="text/javascript">
+    $(window).on('load', function() {
+        var url = $(location).attr('href');
+        if(url.indexOf("?id=") != -1){
+            var id = url.split("?id=");
+            var $target = $('#' + id[id.length - 1]);
+            if($target.length){
+                var pos = $target.offset().top;
+                $("html, body").animate({scrollTop:pos}, 500);
+            }
+        }
+    });
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+	<div class="inner">
+        <a href="index.html"><img src="images/logo.png" alt="第64回翠巒祭"></a>
+		<p class="summary">
+		高崎高校文化祭 6月4・5日
+		</p>
+	</div><!-- /.inner -->
+</header>
+
+<div id="spMenu"><span id="navBtn"><span id="navBtnIcon"></span></span></div>
+<script type="text/javascript" src="menu.js" ></script>
+<div id="contents">
+	<div id="main">
+        <h1>アクセス</h1>
+		<h2 >地図</h2>
+        <iframe src="https://www.google.com/maps/d/embed?mid=zN5Qkf4JlUEc.kb1yIWMHVnxU" width="100%" height="400"></iframe>
+        <p>群馬県高崎市八千代町2丁目4番1号 （TEL 027-324-0074　 FAX 027-324-7712）</p>
+        <div class="jump"><span  id="shuttle"></span></div>
+		<h2 >シャトルバス</h2>
+        <p>翠巒祭当日は南小から高崎高校までの無料シャトルバスが運行されます。</p>
+        <p>高崎駅西口から南小までは黒いTシャツを着た実行委員がご案内します。</p>
+        <iframe src="https://www.google.com/maps/d/embed?mid=zN5Qkf4JlUEc.kLsHGVg06nYI&z=17" width="100%" height="400"></iframe>
+        <p>10分～15分間隔で運行します。
+		<br>高崎高校→高崎駅のバスは両日とも17:00までに並んでいただいた方までで終了となります。
+		<br>終了間際は大変混雑するため、運行間隔がずれることがあります。</p>
+		</p>
+        <div class="jump"><span  id="parking"></span></div>
+        <h2 >駐車場・駐輪場</h2>
+        <iframe src="https://www.google.com/maps/d/embed?mid=zN5Qkf4JlUEc.kx01H2jk4FbE" width="100%" height="400"></iframe>
+		<p>学校の近くまで来ましたら、実行委員の誘導にしたがい駐車場まで移動してください。
+		<br>指定の駐車場以外への駐車は近隣の方の迷惑となりますのでご遠慮ください。</p>
+		<p>高チャリでの来場はご遠慮ください。</p>
+		<ul>
+			<li>駐輪場　自転車でお越しの方は高崎高校内の駐輪場をご利用できます。</li>
+			<li>第1駐車場　一般開放はしておりません。</li>
+			<li>第2駐車場　学校の南側、護国神社の横にあります。</li>
+			<li>第3駐車場　護国神社鳥居横です。</li>
+			<li>第4駐車場　一般開放はしておりません。</li>
+			<li>第5駐車場　聖石橋下です。保護者の方はこちらをご利用ください。</li>					
+			<li>第6駐車場　ときわ観光バス　高崎営業所</li>
+		</ul>
+    </div><!-- /#main -->
+	<div id="sub">
+	    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/Suirannsai64" data-widget-id="585002273316544512">@Suirannsai64さんのツイート</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>     
+     	<script type="text/javascript" src="link.js" ></script>
+	</div><!-- /#sub -->
+</div><!-- /#contents -->
+
+<footer>
+	<div class="copyright">Copyright &#169; 2016 Suiran Festival All Rights Reserved.</div><!-- /.copyright -->
+</footer>
+
+<div class="totop"><a href="#"><img src="images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86297566-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
