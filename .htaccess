@@ -1,6 +1,7 @@
 Allow from all
 Header set Strict-Transport-Security "max-age=315360000; includeSubDomains; preload"
 RewriteEngine on
+RewriteRule ^index2.html$ https://2016.suiranfes.com/ [R=301,L] 
 RewriteCond %{HTTP_HOST} ^2016.suiranfes.com$
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*) https://2016.suiranfes.com/$1 [R=301,L]
